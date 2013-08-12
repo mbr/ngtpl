@@ -20,7 +20,8 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('templates', nargs='+',
                         help='The templates to collect.')
-    parser.add_argument('-w', '--wrapper', choices=['html', 'jinja2'])
+    parser.add_argument('-w', '--wrapper', choices=['html', 'jinja2'],
+                        default='html')
     args = parser.parse_args()
 
     wrapper_func = globals()['wrapper_' + args.wrapper]
