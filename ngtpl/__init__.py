@@ -10,7 +10,7 @@ def wrapper_html(data, id, type="text/ng-template"):
 def wrapper_jinja2(*args, **kwargs):
     html = wrapper_html(*args, **kwargs)
 
-    return """{%% raw -%%}\n%s\n{%%- raw -%%}""" % (html,)
+    return """{%% raw -%%}\n%s\n{%%- endraw -%%}""" % (html,)
 
 
 def main():
