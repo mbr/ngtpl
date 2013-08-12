@@ -12,7 +12,7 @@ def read(fname):
 
 setup(
     name='ngtpl',
-    version='0.1.1dev',
+    version='0.2',
     description='Collect angular templates, outputs compiled html',
     #long_description=read('README.rst'),
     author='Marc Brinkmann',
